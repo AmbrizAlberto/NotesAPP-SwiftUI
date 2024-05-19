@@ -3,8 +3,17 @@ Notes Application for iOS developed with SwiftUI, you can Create, Edit &amp; Del
 
 Preview Views:
 
-![Ejemplo de imagen]([https://github.com/tu-usuario/tu-repositorio/raw/main/ejemplo.png](https://github.com/AmbrizAlberto/NotesAPP-SwiftUI/blob/master/Images/MainView.png?raw=true))
+# Main View
+![Main Image](https://github.com/AmbrizAlberto/NotesAPP-SwiftUI/blob/master/Images/MainView.png)
+
+
+# Create Note View
+![Create Image](https://github.com/AmbrizAlberto/NotesAPP-SwiftUI/blob/master/Images/CreateView.png)
+
+
+# Note View
+![Note Image](https://github.com/AmbrizAlberto/NotesAPP-SwiftUI/blob/master/Images/NoteView.png)
 
 ## Descripción
 
-Aquí hay más detalles sobre mi proyecto...
+Soon...
