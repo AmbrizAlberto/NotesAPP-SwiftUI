@@ -35,7 +35,7 @@ struct Detalle: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             TextEditor(text: $nuevaDescripcion)
-                .frame(height: 350) // Ajusta la altura según sea necesario
+                .frame(height: 250) // Ajusta la altura según sea necesario
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)
