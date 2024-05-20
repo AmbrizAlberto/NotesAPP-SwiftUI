@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct NuevaNotaView: View {
+    
+    // Declaracion de variables de entorno y estado
     @Environment(\.presentationMode) var presentationMode
     @State private var nombre = ""
     @State private var descripcion = ""
     @Binding var notas: [Nota]
     
+    // Vista para Crear nueva Nota
     var body: some View {
-        NavigationView {
+        // Vista
+            // En vertical
             VStack {
+                // Input para nombre de nueva nota
                 TextField("Nombre de la nota", text: $nombre)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                // Input para descripcion de nueva nota
                 TextField("Descripción de la nota", text: $descripcion)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                // Boton para Crear la nota
                 Button(action: {
                     let nuevaNota = Nota(nombre: nombre, descripcion: descripcion)
                     notas.append(nuevaNota)
@@ -35,7 +42,9 @@ struct NuevaNotaView: View {
                 }
                 .padding()
             }
+            // Titulo que se mostrara en la vista
             .navigationTitle("Nueva Nota")
+            // Boton para cancelar la creacion de la nota
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancelar") {
@@ -45,7 +54,6 @@ struct NuevaNotaView: View {
             }
         }
     }
-}
 
 
 #Preview {
